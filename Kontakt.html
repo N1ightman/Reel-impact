@@ -1,1 +1,105 @@
-<!-- kontaktsidan -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Reel Impact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- navmenyn gemensam för alla sidor -->
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="Reel Impact logga" />
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="about.html">Om oss</a></li>
+        <li><a href="kurser.html">Kurser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="kontakt.html" class="knapp">Anmäl dig</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- rubriken på sidan och ett kort intro -->
+    <section class="sidhuvud">
+      <h1>Kontakt</h1>
+      <p>Har du frågor eller vill veta mer? Hör av dig!</p>
+    </section>
+
+    <!-- innehåller formulär och kontaktiinfon bredvid varandra -->
+    <section class="kontakt-layout">
+
+      <!-- formulär där man skriver in meddelande -->
+      <div class="kontakt-formular">
+        <h2>Skicka ett meddelande</h2>
+        <!-- där man skriver in namn -->
+        <label for="namn">Namn</label>
+        <input type="text" id="namn" placeholder="Ditt namn" />
+        <!-- epost input -->
+        <label for="epost">E-post</label>
+        <input type="email" id="epost" placeholder="din@email.com" />
+        <!-- ämne dropdownmeny -->
+        <label for="amne">Ämne</label>
+        <select id="amne">
+          <option value="">Välj ämne</option>
+          <option value="kurs">Fråga om kurs</option>
+          <option value="workshop">Företagsworkshop</option>
+          <option value="ovrigt">Övrigt</option>
+        </select>
+        <!-- meddelande input -->
+        <label for="meddelande">Meddelande</label>
+        <textarea id="meddelande" placeholder="Skriv ditt meddelande här..."></textarea>
+        <!-- knapp för att skiicka -->
+        <button class="knapp" onclick="skickaFormular()">Skicka</button>
+      </div>
+
+      <!-- karta och kontaktiinfo -->
+      <div class="kontakt-info">
+        <h2>Hitta oss</h2>
+
+        <!-- karta inbäddad från google maps -->
+        <div class="karta">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130385.41!2d18.0686!3d59.3293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1ssv!2sse!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            title="Karta"
+          ></iframe>
+        </div>
+
+        <!-- kontaktinfo -->
+        <p>✉️ hello@reelimpact.se</p>
+        <p>📍 Stockholm, Sverige</p>
+        <p>🕐 Mån–Fre: 09:00–17:00</p>
+
+        <!-- länkar till sociala medier -->
+        <div class="sociala">
+          <a href="https://instagram.com" target="_blank" class="knapp">Instagram</a>
+          <a href="https://youtube.com" target="_blank" class="knapp">YouTube</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- footer, sidfot med länkar och kontaktinfo -->
+  <footer>
+    <p>© 2026 Reel Impact</p>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="about.html">Om oss</a></li>
+      <li><a href="kurser.html">Kurser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <p>hello@reelimpact.se</p>
+  </footer>
+  <!-- länk till JS-dokument -->
+  <script src="main.js"></script>
+</body>
+</html>
