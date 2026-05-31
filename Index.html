@@ -1,1 +1,134 @@
-<!-- Startsida -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reel Impact</title>
+  <--! läknen till det externa css dokumentet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- header, innehåller navigationsmenyn högst upp-->
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="Reel Impact logga" />
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="about.html">Om oss</a></li>
+        <li><a href="kurser.html">Kurser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="kontakt.html" class="knapp">Anmäl dig</a>
+    </nav>
+  </header>
+  <!-- main delen som utgör huvudinnehållet på sidan -->
+  <main>
+
+    <!-- hero första sektionen på sidan -->
+    <section class="hero">
+      <img src="images/hero.png" alt="Hero-bild" />
+      <div class="hero-text">
+        <p class="hero-liten">Mobilvideografi för alla</p>
+        <h1>Skapa kraftfulla videos med mobilen</h1>
+        <p>Lär dig filma och redigera snygga reels – utan dyr utrustning.</p>
+        <div class="hero-knappar">
+          <a href="kurser.html" class="knapp">Se våra kurser</a>
+          <a href="about.html" class="knapp knapp-outline">Läs mer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 rutor som visar vad som erbjuds -->
+    <section class="rutor">
+      <div class="ruta">
+        <h3>📱 Mobilen som verktyg</h3>
+        <p>Du behöver ingen dyr utrustning. Vi visar hur du maximerar mobilen du redan har.</p>
+      </div>
+      <div class="ruta">
+        <h3>⚡ Enkla metoder</h3>
+        <p>Inga komplicerade program. Enkla tekniker som ger resultat direkt.</p>
+      </div>
+      <div class="ruta">
+        <h3>🎬 Snabbt content</h3>
+        <p>Gå från idé till publicerat innehåll på rekordtid.</p>
+      </div>
+    </section>
+
+    <!-- visar tre kort med bilder beskrivning och knappar -->
+    <section class="kurser">
+      <h2>Våra kurser</h2>
+      <div class="kort-grid">
+        <div class="kort">
+          <img src="images/bild1.png" alt="Nybörjarkurs" />
+          <div class="kort-text">
+            <span class="tagg">Nybörjare</span>
+            <h3>Gratis nybörjarkurs</h3>
+            <p>Lär dig grunderna i att filma och redigera reels med mobilen.</p>
+            <a href="kontakt.html" class="knapp">Anmäl dig</a>
+          </div>
+        </div>
+        <div class="kort">
+          <img src="images/bild2.png" alt="Masterclass" />
+          <div class="kort-text">
+            <span class="tagg">Content creators</span>
+            <h3>Reels Masterclass</h3>
+            <p>För dig som vill skapa mer professionellt content.</p>
+            <a href="kontakt.html" class="knapp">Anmäl dig</a>
+          </div>
+        </div>
+        <div class="kort">
+          <img src="images/bild3.png" alt="Företagsworkshop" />
+          <div class="kort-text">
+            <span class="tagg">Företag</span>
+            <h3>Företagsworkshop</h3>
+            <p>Lär företag skapa bättre content till sociala medier.</p>
+            <a href="kontakt.html" class="knapp">Anmäl dig</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- visar vem kurserna är riktade till -->
+    <section class="malgrupp">
+      <h2>Vem är det för?</h2>
+      <div class="kort-grid">
+        <div class="ruta">
+          <h3>🌱 Nybörjare</h3>
+          <p>Börja från noll. Vi guidar dig tryggt genom grunderna.</p>
+        </div>
+        <div class="ruta">
+          <h3>⭐ Content creators</h3>
+          <p>Lyft ditt content och väx din publik.</p>
+        </div>
+        <div class="ruta">
+          <h3>🏢 Företag</h3>
+          <p>Ge ditt team verktygen att producera professionellt videocontent.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA-banner, uppmanar besökaren att klicka och anmäla sig -->
+    <section class="cta">
+      <h2>Redo att skapa?</h2>
+      <p>Anmäl ditt intresse idag och vi hör av oss när nästa kurs startar.</p>
+      <a href="kontakt.html" class="knapp knapp-mörk">Anmäl intresse nu</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER, innehåller länkar och kontaktinfo -->
+  <footer>
+    <p>© 2026 Reel Impact</p>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="about.html">Om oss</a></li>
+      <li><a href="kurser.html">Kurser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <p>hello@reelimpact.se</p>
+  </footer>
+  <!-- länk till extern JS-fil -->
+  <script src="main.js"></script>
+</body>
+</html>
