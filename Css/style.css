@@ -1,1 +1,492 @@
+/*CSS-VARIABLER (temafärger)*/
+:root {
+  --bakgrund: #0a0a0a;
+  --text: #ffffff;
+  --accent: #e8ff47;
+  --grå: #1a1a1a;
+  --grå2: #2a2a2a;
+}
 
+/* nollställer webläsaren standardstiler */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bakgrund);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* navbar fest högst upp på sidan */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--grå);
+}
+/* loggan till vänster */
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+/* effekten när man håller musen över länkarna */
+nav ul a:hover {
+  color: var(--accent);
+}
+
+/* knappar */
+.knapp {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #000000;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.knapp:hover {
+  background-color: #cfea2e;
+}
+
+.knapp-outline {
+  background-color: transparent;
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+
+.knapp-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.knapp-mörk {
+  background-color: #000000;
+  color: var(--text);
+}
+
+.knapp-mörk:hover {
+  background-color: #222222;
+}
+
+/* hero första sektionen på hemsidan */
+.hero {
+  position: relative;
+  padding-top: 70px;
+}
+
+.hero img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+
+.hero-liten {
+  color: var(--accent);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-knappar {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* 3 rutorna som visar vad som erbjuds */
+.rutor {
+  display: flex;
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+}
+/* varje ruta tar lika mycekt plats */
+.ruta {
+  flex: 1;
+  background-color: var(--grå);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.ruta h3 {
+  margin-bottom: 0.75rem;
+}
+
+.ruta:hover {
+  border: 1px solid var(--accent);
+}
+
+/* kurserna, tre kort med bild och text */
+.kurser {
+  padding: 4rem 2rem;
+  background-color: var(--grå);
+}
+/* korten ligger bredvid varandra */
+.kort-grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.kort {
+  flex: 1;
+  background-color: var(--bakgrund);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kort img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.kort-text {
+  padding: 1.2rem;
+}
+
+.kort-text h3 {
+  margin: 0.5rem 0;
+}
+
+.kort-text p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.kort:hover {
+  outline: 1px solid var(--accent);
+}
+
+.tagg {
+  background-color: rgba(232, 255, 71, 0.15);
+  color: var(--accent);
+  padding: 0.2rem 0.8rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+}
+
+/* målgrupoperna */
+.malgrupp {
+  padding: 4rem 2rem;
+}
+
+/* CTa banner */
+.cta {
+  background-color: var(--accent);
+  color: #000000;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 0 2rem 4rem;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  color: #000000;
+}
+
+.cta p {
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+/* sidfot med länkar och info */
+footer {
+  background-color: var(--grå);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  gap: 1.5rem;
+}
+/* effekt när man håller musen ovanför länkarna */
+footer a:hover {
+  color: var(--accent);
+}
+
+/* sidhuvud från about delen */
+}
+.sidhuvud {
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background-color: var(--grå);
+}
+
+.sidhuvud h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidhuvud p {
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+/* bakgrundsdelen */
+.grundare {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  align-items: center;
+}
+
+.grundare img {
+  width: 45%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.grundare-text h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.grundare-text p {
+  margin-bottom: 1rem;
+}
+
+/* vision */
+.vision {
+  background-color: var(--grå);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.vision p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* vad som erbjuds */
+.erbjuder {
+  padding: 4rem 2rem;
+}
+
+.erbjuder ul {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.erbjuder li {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--grå);
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.erbjuder li:hover {
+  border: 1px solid var(--accent);
+}
+
+/* responsiviteten hos about delen */
+@media (max-width: 768px) {
+  .grundare {
+    flex-direction: column;
+  }
+
+  .grundare img {
+    width: 100%;
+  }
+}
+/* kontakt delen layot */
+.kontakt-layout {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 2rem;
+}
+
+/* formuläret */
+.kontakt-formular {
+  flex: 1;
+}
+
+.kontakt-formular h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.kontakt-formular label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.kontakt-formular input,
+.kontakt-formular select,
+.kontakt-formular textarea {
+  width: 100%;
+  background-color: var(--grå);
+  border: 1px solid var(--grå2);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.kontakt-formular input:focus,
+.kontakt-formular select:focus,
+.kontakt-formular textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.kontakt-formular textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+.kontakt-formular button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+.kontakt-info {
+  flex: 1;
+}
+
+.kontakt-info h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.kontakt-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.karta {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.karta iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.sociala {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* responsiva designen för kontaktsidan */
+@media (max-width: 768px) {
+  .kontakt-layout {
+    flex-direction: column;
+  }
+}
+/* responsiv design */
+
+/* Surfplatta (max 768px) */
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+  }
+
+  .hero img {
+    height: 450px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .rutor {
+    flex-direction: column;
+  }
+
+  .kort-grid {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+}
+
+/* Mobil (max 480px) */
+@media (max-width: 480px) {
+
+  .hero img {
+    height: 350px;
+  }
+
+  .hero-knappar {
+    flex-direction: column;
+  }
+
+  .cta {
+    margin: 0;
+    border-radius: 0;
+  }
